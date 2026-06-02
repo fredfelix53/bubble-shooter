@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#001520">
+  <title>Bubble Shooter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="hud-bar">
+    <div class="hud-left">
+      <span class="hud-title">🫧 BUBBLE SHOOTER</span>
+    </div>
+    <div class="hud-right">
+      <span class="hud-item" onclick="if(window.ShopUI)ShopUI.showTab('upgrades')"><span class="lvl-icon">⚡ Lv.<span id="hud-level">1</span></span></span>
+      <span class="hud-item"><span class="coin-icon">🪙</span><span id="hud-coins">100</span></span>
+      <span class="hud-item"><span class="gem-icon">💎</span><span id="hud-gems">0</span></span>
+    </div>
+  </div>
+
+  <div id="game-container">
+    <div id="score-display">
+      <div class="score-label">Score</div>
+      <div class="score-value" id="score-value">0</div>
+    </div>
+
+    <div id="game-area">
+      <canvas id="game-canvas"></canvas>
+      <div id="level-display">Level: <span id="lvl-num">1</span></div>
+      <div id="next-bubble">🔮</div>
+    </div>
+
+    <div id="button-bar">
+      <button class="game-btn btn-primary" id="start-btn">▶ Start</button>
+      <button class="game-btn btn-shop" id="button-shop">🛒 Shop</button>
+      <button class="game-btn btn-powerup" id="button-ach">🏆</button>
+      <button class="game-btn btn-danger" id="button-powerup">💣 Bomb</button>
+    </div>
+  </div>
+
+  <div id="game-over-overlay">
+    <div class="game-over-box">
+      <h2>Game Over</h2>
+      <div class="final-score" id="final-score">0</div>
+      <div class="stat-row">
+        <span>Pops: <strong id="go-pops">0</strong></span>
+        <span>Best Chain: <strong id="go-chain">0</strong></span>
+        <span>Level: <strong id="go-level">1</strong></span>
+      </div>
+      <div class="btn-group">
+        <button class="game-btn btn-primary" onclick="startGame()">▶ Play Again</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="notification"></div>
+  <script src="visuals.js"></script>
+  <script src="progression.js"></script>
+  <script src="shop.js"></script>
+  <script src="ads-manager.js"></script>
+  <script src="challenges-system.js"></script>
+  <script src="store-rotator.js"></script>
+  <script src="retention-system.js"></script>
+  <script src="collectibles-system.js"></script>
+  <script src="tutorial-system.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
