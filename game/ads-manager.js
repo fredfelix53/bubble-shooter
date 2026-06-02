@@ -14,10 +14,10 @@
   // ─── Default configuration — override per game ────
   const DEFAULT_CONFIG = {
     // AdMob IDs — swap with real ones after verification
-    appId: 'ca-app-pub-3940256099942544~3347511713',
-    rewardedId: 'ca-app-pub-3940256099942544/5224354917',   // test
-    interstitialId: 'ca-app-pub-3940256099942544/1033173712', // test
-    bannerId: 'ca-app-pub-3940256099942544/6300978111',     // test
+    appId: 'ca-app-pub-7122196431098987~4759970293',
+    rewardedId: 'ca-app-pub-7122196431098987/1584662524',   // test
+    interstitialId: 'ca-app-pub-7122196431098987/7733617992', // test
+    bannerId: 'ca-app-pub-7122196431098987/2728703321',     // test
 
     // Rate limits
     maxRewardedPerDay: 10,
